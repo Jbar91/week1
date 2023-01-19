@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "sass": "^1.57.1",
+    "scss": "^0.2.4"
+  },
+  "name": "day4-5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass sass:css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

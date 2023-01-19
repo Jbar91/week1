@@ -1,0 +1,50 @@
+@use "nombreDelFicheros.scss";
+* {
+  box-sizing: border-box;
+}
+
+$primary-color: orange;
+
+%paragraph-base {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.title1 {
+  color: $primary-color;
+  display: flex;
+  justify-content: center;
+}
+
+.secondary-title {
+  color: $primary-color;
+  font-size: 2rem;
+  padding: 1rem;
+  font-size: verdana;
+}
+
+.footer {
+  color: $primary-color;
+}
+
+.paragraph1 {
+  @extend %paragraph-base;
+  text-decoration: underline;
+}
+
+.paragraph2 {
+  @extend %paragraph-base;
+  text-decoration: overline;
+}
+
+.article1 {
+  .secondary-title {
+    font-weight: bold;
+  }
+  .paragraph1 {
+    span {
+      text-transform: uppercase;
+    }
+  }
+}
