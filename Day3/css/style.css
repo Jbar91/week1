@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Selector de etiqueta */
+h1 {
+  color: maroon;
+}
+
+header,
+footer {
+  color: black;
+}
+header {
+  font-size: larger;
+}
+
+/* Selectror por clases */
+.violet {
+  color: violet;
+}
+
+/* Selector por atributos */
+[type="text"] {
+  border-color: coral;
+}
+/*
+[id="p1"] {
+} */
+
+/* Selector por id */
+#p1 {
+  color: blue;
+}
+
+/* Selectores combinados */
+
+header p {
+  font-size: 0.8rem;
+}
+header > p {
+  font-style: italic;
+}
+
+/* Hermanos */
+#p1 ~ p {
+  background-color: blue;
+}
+/* Adyacentes  */
+#p1 + p {
+  background-color: crimson;
+}
+
+article::first-line {
+  color: blue;
+}
+
+article:hover {
+  background-color: violet;
+}
+
+article::before {
+  content: "º";
+}
